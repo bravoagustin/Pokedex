@@ -1,0 +1,23 @@
+#container {
+    height: calc(100vh - 110px);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    background: rgb(128, 189, 190);
+}
+
+app-foto-pokemon{
+    margin-left: 100px;
+}
+
+#tarjetasContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+#spinner {
+    max-height: 50px;
+}

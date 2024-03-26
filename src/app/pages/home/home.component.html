@@ -1,0 +1,10 @@
+<main id="container">
+    <app-foto-pokemon></app-foto-pokemon>
+    <div id="tarjetasContainer" #tarjetas (scroll)="onScroll($event)">
+        <app-tarjeta-pokemon *ngFor="let pokemon of listaPokemon" 
+        [data]="pokemon"
+        >
+        </app-tarjeta-pokemon>
+        <img src="./../../../assets/img/spinner.svg" alt="Cargando" id="spinner" *ngIf="cargando">
+    </div>
+</main>
