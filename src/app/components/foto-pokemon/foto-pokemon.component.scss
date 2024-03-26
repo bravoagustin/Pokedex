@@ -2,6 +2,7 @@
     border: 3px solid #8cbbf1;
     outline: 9px solid #f8e55c;
     max-width: 500px;
+    margin-left: 100px;
     aspect-ratio: 1;
     border-radius: 25px;
 
@@ -13,4 +14,8 @@
         #c9e2f4 15px,
         #c9e2f4 25px, 
     );
+    img{
+        width: 100%;
+        image-rendering: pixelated;
+    }
 }

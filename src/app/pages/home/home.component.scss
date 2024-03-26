@@ -6,7 +6,7 @@
     background: rgb(128, 189, 190);
 }
 
-app-foto-pokemon{
+.app-foto-pokemon{
     margin-left: 100px;
 }
 
@@ -16,6 +16,7 @@ app-foto-pokemon{
     gap: 5px;
     max-height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #spinner {

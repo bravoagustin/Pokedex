@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Resultado } from 'src/app/interfaces/pokeapi';
+import { Pokemon } from 'src/app/interfaces/pokemon';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 
@@ -20,9 +21,11 @@ export class HomeComponent implements OnInit {
 
   pagina:number = 1;
   cargando:boolean = false;
+  pokemonSeleccionado?:Pokemon;
 
   ngOnInit(): void {
     this.cargarLista();
+    this.pokemonService.getById("1");
   }
 
   async cargarLista(){
@@ -45,5 +48,9 @@ export class HomeComponent implements OnInit {
         === e.srcElement.scrollHeight){
           this.cargarLista();
         }
+      }
+
+      async tarjetaClickeada(id:string){
+        this.pokemonSeleccionado = await this.pokemonService.getById(id);
       }
   }
