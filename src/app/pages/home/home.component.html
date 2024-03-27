@@ -1,6 +1,9 @@
 <main id="container">
     <app-detalle
     [pokemon] = "pokemonSeleccionado"
+    (clicked)="cambiarEstadoDetalle()"
+    [abierto]="detalle"
+    [ngClass]="{abierto: detalle}"
     ></app-detalle>
     <app-foto-pokemon
     [pokemon] = "pokemonSeleccionado"

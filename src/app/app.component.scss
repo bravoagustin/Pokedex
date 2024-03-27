@@ -9,16 +9,16 @@ header {
     user-select: none;
     background: linear-gradient(
         to right,
-        #6188ff,
-        #6188ff 70%,
-        #71a4f3 71%,
-        #71a4f3 97%,
-        #8ec0f0 100%,
+        #8498d4,
+        #738edc 70%,
+        #7b9dd1 71%,
+        #7393c3 97%,
+        #7f9bb7 100%,
     );
     a{
         color: var.$texto-blanco;
         text-decoration: none;
-        background-color: #3771cf;
+        background-color: #94acd1;
         height: 50px;
         line-height: 50px;
         padding: 0 30px;
@@ -34,12 +34,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
-    background-color: #88daf2;
+    background-color: #92bcc8;
     width: 300px;
     border-radius: 50PX;
     height: 50px;
     color: var.$texto-blanco;
-    border: solid 3px #30408d;
+    border: solid 3px #444c76;
 
     img{
         height: 40px;
@@ -52,7 +52,7 @@ header {
 }
 
 footer {
-    background-color: #88daf2;
+    background-color: #95d4e8;
     height: 30px;
     display: flex;
     justify-content: flex-end;

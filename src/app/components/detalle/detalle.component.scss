@@ -1,9 +1,18 @@
+@use"./../../../assets/styles/var.scss";
+
 #container {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+}
+
+#datos {
     height: 600px;
-    width: 95vw;
+    width: 90vw;
     background-color: rgb(235, 219, 177);
     display: grid;
+    align-items: center;
     grid-template-rows: 1fr 3fr 3fr;
+
     .area:first-child {
         flex-grow: 1;
         background-color: #bfc3ce;
@@ -12,11 +21,17 @@
         background-size: 20px 20px;
       }
       .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         padding-left: 60%;
+        padding-right: 20px;
         background-color: #d3ecf6;
         background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
         linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
-        background-size: 20px 20px;
+        background-size: 20px 20px;    
+        font-size: larger;
       }
       .area:last-child {
         background: repeating-linear-gradient(
@@ -27,5 +42,64 @@
           #bfd678 4px,
         );
       }
+      p{
+        margin: 10px 20px;
+      }
+}
 
+#descriptionContainer{
+    background-color: #F8f7db;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    div{
+        background-color: #daeac4;
+        margin-top: 10px;
+        height: 90%;
+        margin: 5px;
+        &:first-child{
+            border-radius: 0 8px 8px 0;
+        }
+        &:last-child{
+            border-radius: 8px 0 0 8px;
+        }
+    }
+}
+
+.etiqueta{
+    display: inline-block;
+    background-color: #4f89a1;
+    border-radius: 5px;
+    color: var.$texto-blanco;
+    padding: 5px 20px;
+    font-size: x-large;
+    width: 150px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.tipo{
+    background-color: gray;
+    border-radius: 5px;
+    color: var.$texto-blanco;
+    padding: 5px 20px;
+    margin-left: 5px;
+}
+
+button {
+    background-color: rgb(241, 204, 151);
+    border-radius: 0 25px 25px 0;
+    border: unset;
+    cursor: pointer;
+    img{
+        height: 50px;
+        transition: 0.5s;
+        &.girar{
+            rotate: 180deg;
+        }
+        &.hover{
+            scale: 1.1;
+        }
+    }
 }

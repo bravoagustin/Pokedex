@@ -1,6 +1,6 @@
 #container{
-    border: 3px solid #8cbbf1;
-    outline: 9px solid #f8e55c;
+    border: 3px solid #c0c2c4;
+    outline: 9px solid #718685;
     max-width: 500px;
     margin-left: 100px;
     aspect-ratio: 1;
@@ -9,10 +9,10 @@
    //desde el pixel 15 hasta el 30
     background: repeating-linear-gradient(
         to bottom,
-        #f5f7f9,
-        #f5f7f9 15px,
-        #c9e2f4 15px,
-        #c9e2f4 25px, 
+        #c8cbcf,
+        #c4c8cc 15px,
+        #c7cdd2 15px,
+        #d0d4d7 25px, 
     );
     img{
         width: 100%;

@@ -1,16 +1,24 @@
 <div id="container">
+    <div id="datos">
+        <div class="area">
+            <app-tarjeta-pokemon
+            [fullData]="pokemon"
+            >  
+            </app-tarjeta-pokemon>
+        </div>
     <div class="area">
-        <app-tarjeta-pokemon></app-tarjeta-pokemon>
-    </div>
-    <div class="area">
-        <p><span class="etiqueta">Tipo:</span><span class="Tipo" *ngFor="let tipo of pokemon?.types">{{tipo.type.name}}</span></p>
-        <p><span class="etiqueta">Peso en kg:</span>{{pokemon?.weight}}</p>
-        <p><span class="etiqueta">Abilidad:</span><span class="Abilidad" *ngFor="let abilidad of pokemon?.abilities">{{abilidad.ability.name}}</span></p>
+        <p><span class="etiqueta">Tipo</span><span class="tipo" *ngFor="let tipo of pokemon?.types">{{tipo.type.name}}</span></p>
+        <p><span class="etiqueta">Peso en lb</span>{{pokemon?.weight}}</p>
+        <p><span class="etiqueta">Abilidad</span><span class="Abilidad" *ngFor="let abilidad of pokemon?.abilities">{{abilidad.ability.name}}</span></p>
     </div>
     <div class="area">
         <div id="descriptionContainer">
             <div></div>
             <p>{{description}}</p>
         </div>
+     </div>    
     </div>
+    <button (click)="clicked.emit()">
+        <img src="./../../../assets/img/flecha.png" alt="" [ngClass]="{girar: abierto}">
+    </button>
 </div>
