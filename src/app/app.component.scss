@@ -27,6 +27,7 @@ header {
     }
 }
 
+
 #tituloContainer {
     
     display: flex;
@@ -47,6 +48,36 @@ header {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2.5rem;
         -webkit-text-stroke: 1px #30607a;
+    }
+}
+
+footer {
+    background-color: #88daf2;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var.$texto-blanco;
+
+    a{
+        color: var.$texto-blanco;
+        text-decoration: none;
+    }
+
+    p{
+        color: rgb(80, 122, 119);
+        margin: 0 20px;
+    }
+    kbd{
+        display: inline-block;
+        background-color: rgb(126, 187, 182);
+        border-radius: 50%;
+        width: 26px;
+        line-height: 26px;
+        text-align: center;
+        aspect-ratio: 1;
+        font-size: xx-large;
+        margin: 0 5px;
     }
 }
 
